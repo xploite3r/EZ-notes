@@ -1,28 +1,49 @@
-<!doctype HTML>
-<html lang=""en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" ccontent="width=device-width, initial-scale=1.0">
-    <title>EZ NOTES</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div class="btn">
-        <div class="heading">
-            <h1>EZ NOTES</h1>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-eqiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>EZ Notes</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/line.css">
+    </head>
+    <body>
+        <div class="popup-box">
+            <div class="popup-show">
+                <div class="content">
+                    <header>
+                        <p> Create a Note</p>
+                        <i class="uil uil-times"></i>
+                    </header>
+                    <form action="#">
+                        <div class="row title">
+                            <label>Title</label>
+                            <input type-="text" id="input">
+                        </div>
+                        <div class="row description">
+                            <label for="">Description</label>
+                            <textarea name="" id=""></textarea>
+                        </div>
+                        <button class="add-note">Add Note</button>
+                    </form>
+                    
+                </div>
+            </div>
         </div>
-        <button id="addbttn">
-            <i class="fas fa-plus"></i>
-            Add Note
-        </button>
-    </div>
-    <div id="main">
+        <div class="wrapper">
+            <li class="add-box">
+                <div class="icon"><i class="uil uil-plus"></i></div>
+                <p>Create A Note</p>
+             </li>
+             <li class="note">
+                <div class="details">
+                    <p>This is a title</p>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. A natus commodi facilis quidem hic molestias, odio consequatur, soluta officia enim delectus adipisci, repellendus et nostrum repudiandae nesciunt. Vitae, ipsa neque?</span>
+                </div>
+             </li>
 
-    </div>
-    <script src="https://kit.fontawsome.com/bf520e6492.js" crossorigin="anonymous">
-        
-    </script>
-    <script src="./script.js"></script>
-</body>
+
+        </div>
+        <script src="index.js"></script>
+    </body>
 </html>
